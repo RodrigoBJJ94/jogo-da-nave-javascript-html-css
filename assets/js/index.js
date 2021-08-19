@@ -194,12 +194,12 @@ function restart() {
     screenMessage.style.display = 'none';
     clearInterval(timeCreateBombs);
     cancelAnimationFrame(frames);
-    lifePlanet = 300;
+    lifePlanet = 1;
     positionPlayerX = screenWidth / 2;
     positionPlayerY = screenHeigth / 2;
     player.style.top = positionPlayerY + 'px';
     player.style.left = positionPlayerX + 'px';
-    countBombs = 150;
+    countBombs = 10;
     game = true;
     timeCreateBombs = setInterval(createBombs, 1700);
     gameLoop();

@@ -81,3 +81,15 @@ body {
 .button-play:hover {
     background: rgba(162, 162, 214, 0.7);
 }
+
+@media (max-width: 800px) {
+    .screen-message {
+        position: absolute;
+        width: 416px;
+        height: 900px;
+        max-width: 100%;
+        display: none;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
