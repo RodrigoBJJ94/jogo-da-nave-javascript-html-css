@@ -1,0 +1,70 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.planet-meter {
+    border: 2px solid black;
+    width: 300px;
+    height: 20px;
+    background: white;
+}
+
+.planet-bar {
+    width: 300px;
+    height: 20px;
+    background: #66f;
+}
+
+.ship-game {
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/img/ship-game.gif);
+    position: absolute;
+}
+
+.bomb {
+    width: 24px;
+    height: 40px;
+    background-image: url(/assets/img/bomb.gif);
+    position: absolute;
+}
+
+.explosion-air {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.explosion-floor {
+    width: 55px;
+    height: 57px;
+    position: absolute;
+}
+
+.shot-player {
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.screen-message {
+    position: absolute;
+    width: 1920px;
+    height: 930px;
+    display: none;
+}
+
+.panel {
+    margin: 10px;
+}
+
+.button-play {
+    margin: 15px;
+    border: none;
+}
