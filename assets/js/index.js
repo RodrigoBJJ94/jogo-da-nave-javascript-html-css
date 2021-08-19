@@ -194,12 +194,12 @@ function restart() {
     screenMessage.style.display = 'none';
     clearInterval(timeCreateBombs);
     cancelAnimationFrame(frames);
-    lifePlanet = 10;
+    lifePlanet = 300;
     positionPlayerX = screenWidth / 2;
     positionPlayerY = screenHeigth / 2;
     player.style.top = positionPlayerY + 'px';
     player.style.left = positionPlayerX + 'px';
-    countBombs = 1;
+    countBombs = 150;
     game = true;
     timeCreateBombs = setInterval(createBombs, 1700);
     gameLoop();
@@ -212,9 +212,9 @@ function start() {
     directionPlayerX = directionPlayerY = 0;
     positionPlayerX = screenWidth / 2;
     positionPlayerY = screenHeigth / 2;
-    velocity = 5;
+    velocity = 10;
     velocityShot = 5;
-    velocityBomb = 13;
+    velocityBomb = 5;
     lifePlanet = 300;
     barPlanet = document.querySelector('.planet-bar');
     barPlanet.style.width = lifePlanet + 'px';
@@ -224,7 +224,6 @@ function start() {
     player.style.left = positionPlayerX + 'px';
     countBombs = 150;
     screenMessage = document.querySelector('#screen-message');
-    //screenMessage.style.backgroundImage = 'url(/assets/img/intro.jpg)';
     screenMessage.style.display = 'block';
     document.querySelector('#button-play').addEventListener('click', restart);
 }
