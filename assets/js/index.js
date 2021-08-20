@@ -213,8 +213,7 @@ function start() {
     positionPlayerX = screenWidth / 2;
     positionPlayerY = screenHeigth / 2;
     velocity = 10;
-    velocityShot = 5;
-    velocityBomb = 5;
+    velocityShot = velocityBomb = 5;
     lifePlanet = 300;
     barPlanet = document.querySelector('.planet-bar');
     barPlanet.style.width = lifePlanet + 'px';
